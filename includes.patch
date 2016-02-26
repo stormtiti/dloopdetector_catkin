@@ -1,0 +1,46 @@
+diff --git a/include/DLoopDetector/DLoopDetector.h b/include/DLoopDetector/DLoopDetector.h
+index c609246..13afecb 100644
+--- a/include/DLoopDetector/DLoopDetector.h
++++ b/include/DLoopDetector/DLoopDetector.h
+@@ -61,10 +61,10 @@ namespace DLoopDetector
+ {
+ }
+ 
+-#include "DBoW2.h"
+-#include "TemplatedLoopDetector.h"
+-#include "FSurf64.h"
+-#include "FBrief.h"
++#include "DBoW2/DBoW2.h"
++#include "DLoopDetector/TemplatedLoopDetector.h"
++#include "DBoW2/FSurf64.h"
++#include "DBoW2/FBrief.h"
+ 
+ /// SURF64 Loop Detector
+ typedef DLoopDetector::TemplatedLoopDetector
+diff --git a/include/DLoopDetector/TemplatedLoopDetector.h b/include/DLoopDetector/TemplatedLoopDetector.h
+index 7c05fdc..f74724d 100644
+--- a/include/DLoopDetector/TemplatedLoopDetector.h
++++ b/include/DLoopDetector/TemplatedLoopDetector.h
+@@ -17,14 +17,14 @@
+ 
+ #include <opencv/cv.h>
+ 
+-#include "TemplatedVocabulary.h"
+-#include "TemplatedDatabase.h"
+-#include "QueryResults.h"
+-#include "BowVector.h"
+-
+-#include "DUtils.h"
+-#include "DUtilsCV.h"
+-#include "DVision.h"
++#include "DBoW2/TemplatedVocabulary.h"
++#include "DBoW2/TemplatedDatabase.h"
++#include "DBoW2/QueryResults.h"
++#include "DBoW2/BowVector.h"
++
++#include "DUtils/DUtils.h"
++#include "DUtilsCV/DUtilsCV.h"
++#include "DVision/DVision.h"
+ 
+ using namespace std;
+ using namespace DUtils;
