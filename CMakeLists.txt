@@ -17,4 +17,5 @@ ExternalProject_CatkinInstall(dloopdetector_src)
 
 cs_install()
 cs_export(
-  INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include)
+  INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include
+  CFG_EXTRAS dloopdetector-extras.cmake)
